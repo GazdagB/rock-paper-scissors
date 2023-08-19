@@ -1,3 +1,30 @@
+.redbg {
+  background-color: #e05a5b;
+}
+
+.greenbg {
+  background-color: #059862;
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+.result-container i {
+  position: absolute;
+  right: -120px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.result-container i:hover {
+  color: #9c8484;
+}
+.result-container i:active {
+  transform: scale(0.99);
+}
+
 body {
   background-color: #252631;
   height: 100vh;
@@ -5,6 +32,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.2s ease-in-out;
 }
 body h1 {
   padding: 20px 0;
@@ -24,7 +52,6 @@ body h1 {
 }
 .hero .result {
   position: relative;
-  margin-top: 50px;
   border: 2px solid #fff;
   border-radius: 5px;
   width: 250px;
@@ -71,6 +98,7 @@ body h1 {
 .choices-container-rock h2 {
   font-size: 6rem;
   transform: rotate(-90deg);
+  user-select: none;
 }
 .choices-container-rock:hover {
   border: 5px solid #9c8484;
@@ -89,6 +117,7 @@ body h1 {
 .choices-container-paper h2 {
   font-size: 6rem;
   transform: rotate();
+  user-select: none;
 }
 .choices-container-paper:hover {
   border: 5px solid #9c8484;
@@ -107,6 +136,7 @@ body h1 {
 .choices-container-scissors h2 {
   font-size: 6rem;
   transform: scaleX(-1) rotate(-90deg);
+  user-select: none;
 }
 .choices-container-scissors:hover {
   border: 5px solid #9c8484;

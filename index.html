@@ -5,37 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/5c7f4e59b4.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="background">
+
     <h1>Rock Paper Scissors</h1>
     <div class="hero">
 
-        <div class="result">
-            <div class="user">User</div>
-            <h2><span class="result-user">0</span> : <span class="result-comp">0</span> </h2>
-            <div class="computer">Comp</div>
+        <div class="result-container">
+            <div class="result">
+                <div class="user">User</div>
+                <h2><span class="result-user">0</span> : <span class="result-comp">0</span> </h2>
+                <div class="computer">Comp</div>
+            
+            </div>
+            <i id="restart" class="fa-solid fa-rotate-right"></i>
         </div>
 
+
         <div class="message">
-            Paper Covers Rock. You Win! 
+            Choose a hand! 
         </div>
 
         <div class="choices-container">
-            <div class="choices-container-rock">
+            <div class="choices-container-rock btn">
                 <!-- <img src="./assets/images/rock.svg" alt=""> -->
                 <h2>✊🏻</h2>
             </div>
-            <div class="choices-container-paper">
+            <div class="choices-container-paper btn">
                 <!-- <img src="./assets/images/paper.svg" alt=""> -->
                 <h2>✋🏻</h2>
             </div>
-            <div class="choices-container-scissors">
+            <div class="choices-container-scissors btn">
                 <!-- <img src="./assets/images/scissors.svg" alt=""> -->
                 <h2 alt="Scissors">✌🏻</h2>
             </div>
         </div>
         <h2>Make your move !</h2>
     </div>
+    
     
 </body>
 </html>

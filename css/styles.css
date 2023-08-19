@@ -23,6 +23,7 @@ body h1 {
   color: #fff;
 }
 .hero .result {
+  position: relative;
   margin-top: 50px;
   border: 2px solid #fff;
   border-radius: 5px;
@@ -33,6 +34,20 @@ body h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hero .result div.user {
+  position: absolute;
+  left: -50px;
+  background-color: #e05a5b;
+  width: 90px;
+  font-size: 1.5rem;
+}
+.hero .result div.computer {
+  position: absolute;
+  right: -50px;
+  background-color: #e05a5b;
+  width: 90px;
+  font-size: 1.5rem;
 }
 .hero .message {
   font-size: 3rem;
@@ -51,10 +66,14 @@ body h1 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: border 0.2s;
 }
 .choices-container-rock h2 {
   font-size: 6rem;
   transform: rotate(-90deg);
+}
+.choices-container-rock:hover {
+  border: 5px solid #9c8484;
 }
 .choices-container-paper {
   border: 5px solid #fff;
@@ -65,10 +84,14 @@ body h1 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: border 0.2s;
 }
 .choices-container-paper h2 {
   font-size: 6rem;
   transform: rotate();
+}
+.choices-container-paper:hover {
+  border: 5px solid #9c8484;
 }
 .choices-container-scissors {
   border: 5px solid #fff;
@@ -79,8 +102,12 @@ body h1 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: border 0.2s;
 }
 .choices-container-scissors h2 {
   font-size: 6rem;
   transform: scaleX(-1) rotate(-90deg);
+}
+.choices-container-scissors:hover {
+  border: 5px solid #9c8484;
 }/*# sourceMappingURL=styles.css.map */

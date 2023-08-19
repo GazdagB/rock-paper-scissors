@@ -24,6 +24,7 @@ body{
     gap: 100px;
     color: #fff;
     .result{
+        position: relative;
         margin-top: 50px;
         border: 2px solid #fff;
         border-radius: 5px;
@@ -34,6 +35,24 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+
+        div.user{
+            position: absolute;
+            left: -50px;
+            background-color: #e05a5b;
+            width: 90px;
+            font-size: 1.5rem;
+            
+        }
+
+        div.computer{
+            position: absolute;
+            right: -50px;
+            background-color: #e05a5b;
+            width: 90px;
+            font-size: 1.5rem;
+            
+        }
     }
     .message{
         font-size: 3rem;
@@ -52,6 +71,11 @@ body{
             font-size: 6rem;
             transform: rotate(-90deg)
         }
+
+        &:hover{
+            border: 5px solid #9c8484;
+            
+        }
     }
 
     &-paper{
@@ -59,6 +83,10 @@ body{
         h2{
             font-size: 6rem;
             transform: rotate()
+        }
+        
+        &:hover{
+             border: 5px solid #9c8484;
         }
     }
 
@@ -68,6 +96,10 @@ body{
             font-size: 6rem;
             transform: scaleX(-1) rotate(-90deg);
             
+        }
+
+        &:hover{
+             border: 5px solid #9c8484;
         }
     }
 }

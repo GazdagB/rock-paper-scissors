@@ -4,6 +4,7 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body h1 {
   padding: 20px 0;
@@ -12,44 +13,74 @@ body h1 {
   text-align: center;
 }
 
+.hero {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  color: #fff;
+}
+.hero .result {
+  margin-top: 50px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .message {
+  font-size: 3rem;
+}
+
 .choices-container {
   display: flex;
   gap: 50px;
 }
 .choices-container-rock {
-  border: 5px solid black;
+  border: 5px solid #fff;
   border-radius: 50%;
   height: 180px;
   width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.choices-container-rock img {
-  width: 150px;
-  height: 150px;
+.choices-container-rock h2 {
+  font-size: 6rem;
+  transform: rotate(-90deg);
 }
 .choices-container-paper {
-  border: 5px solid black;
+  border: 5px solid #fff;
   border-radius: 50%;
   height: 180px;
   width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.choices-container-paper img {
-  width: 150px;
+.choices-container-paper h2 {
+  font-size: 6rem;
+  transform: rotate();
 }
 .choices-container-scissors {
-  border: 5px solid black;
+  border: 5px solid #fff;
   border-radius: 50%;
   height: 180px;
   width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.choices-container-scissors img {
-  width: 150px;
+.choices-container-scissors h2 {
+  font-size: 6rem;
+  transform: scaleX(-1) rotate(-90deg);
 }/*# sourceMappingURL=styles.css.map */

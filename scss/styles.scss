@@ -1,0 +1,46 @@
+@import 'mixins';
+body{
+    background-color: #252631;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    h1{
+       padding: 20px 0;
+       margin: 0;
+       background-color: #fff;
+       text-align: center;
+    }
+}
+
+
+.choices-container{
+
+    display: flex;
+    gap: 50px;
+    
+
+    &-rock{
+        @include circle-container;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    &-paper{
+        @include circle-container;
+        img{
+            width: 150px;
+            
+        }
+    }
+
+    &-scissors{
+        @include circle-container;
+        img{
+            width: 150px;
+        }
+    }
+}

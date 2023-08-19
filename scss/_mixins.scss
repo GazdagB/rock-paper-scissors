@@ -1,0 +1,10 @@
+@mixin circle-container {
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
